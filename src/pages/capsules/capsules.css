@@ -1,0 +1,21 @@
+.capsules {
+    background-image: linear-gradient(to top, #17234b, #141d3d, #11182f, #0e1122, #060815);
+}
+
+a {
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+}
+
+.capsulesContent {
+    display: flex;
+    color: white;
+    height: calc(100vh - 88.5px);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 100%;
+}
