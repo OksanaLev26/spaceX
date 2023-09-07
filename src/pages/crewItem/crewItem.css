@@ -1,0 +1,75 @@
+.crewItemWrapper {
+    background-image: linear-gradient(to top, #17234b, #141d3d, #11182f, #0e1122, #060815);
+    height: calc(100vh - 88.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crewItem {
+    display: flex;
+    justify-content: center;
+}
+
+.crewItemImageWrapper {
+    width: 50%;
+    padding-top: 40px;
+}
+
+.crewItemImage {
+    width: 80%;
+    border-radius: 8%;
+}
+
+.crewItenDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+}
+
+.crewItemName {
+    font-size: 70px;
+    margin: 60px 0 20px 0;
+}
+
+.crewItemStatus {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.agency, .launch {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.wiki {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.wiki:hover, .backButton:hover {
+    color: turquoise;
+    border-color: turquoise;
+}
+
+.backButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 250px;
+    color: white;
+    font-size: 30px;
+    margin-top: 60px;
+}
