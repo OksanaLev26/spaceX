@@ -6,7 +6,7 @@
 .allDragons {
     display: flex;
     margin: 40px;
-    padding: 40px 60px;
+    padding: 0 60px;
 }
 
 .titleDragons {
@@ -16,26 +16,30 @@
     font-size: 75px;
     color: white;
     margin: 0 0 30px 0;
-}
-
-.dragonLink {
-    width: 50%;
+    font-style: italic;
+    font-variant: petite-caps;
 }
 
 .dragon {
     display: flex;
     flex-direction: column;
     padding: 24px;
+    width: 50%;
+    color: white;
 }
 
 .dragonImage {
     max-width: 50rem;
     width: 100%;
     border-radius: 8%;
+    max-height: 500px;
 }
 
 .dragonName {
     margin: 20px;
+    font-style: italic;
+    font-variant: petite-caps;
+    font-size: 36px;
 }
 
 .description {
@@ -43,4 +47,24 @@
     letter-spacing: 1px;
     font-weight: normal;
     margin: 0 20px 0 20px;
+    font-style: italic;
+    font-variant: petite-caps;
+}
+
+.readMoreButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    margin-top: 40px;
+    align-self: center;
+}
+
+.readMoreButton:hover {
+    color: turquoise;
+    border-color: turquoise;
 }

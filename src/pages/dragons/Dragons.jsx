@@ -25,13 +25,18 @@ export const Dragons = () => {
       {dragons ? (
         <div className="allDragons">
           {dragons.map(({ name, description, id, flickr_images }) => (
-            <Link key={id} className="dragonLink" to={`/dragon/${id}`}>
-              <div className="dragon">
-                <img className="dragonImage" src={flickr_images[0]} alt={name} />
+              <div key={id} className="dragon">
+                <img
+                  className="dragonImage"
+                  src={flickr_images[0]}
+                  alt={name}
+                />
                 <div className="dragonName">{name}</div>
                 <div className="description">{description}</div>
+                <Link key={id} className="readMoreButton" to={`/dragon/${id}`}>
+                  <div >Read More</div>
+                </Link>
               </div>
-            </Link>
           ))}
         </div>
       ) : (

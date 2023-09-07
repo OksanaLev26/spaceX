@@ -9,6 +9,8 @@
 .crewItem {
     display: flex;
     justify-content: center;
+    font-style: italic;
+    font-variant: petite-caps;
 }
 
 .crewItemImageWrapper {
@@ -72,4 +74,6 @@
     color: white;
     font-size: 30px;
     margin-top: 60px;
+    font-style: italic;
+    font-variant: petite-caps;
 }
