@@ -33,8 +33,8 @@ export const Dragons = () => {
                 />
                 <div className="dragonName">{name}</div>
                 <div className="description">{description}</div>
-                <Link key={id} className="readMoreButton" to={`/dragon/${id}`}>
-                  <div >Read More</div>
+                <Link key={id} className="readMoreButton" to={`/dragons/${id}`}>
+                  <div>Read More</div>
                 </Link>
               </div>
           ))}

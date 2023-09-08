@@ -20,3 +20,27 @@
     width: 100wh;
     padding-top: 24px;
 }
+
+@media only screen and (max-width: 992px) {
+    p {
+        font-size: 18px;
+    }
+
+    .homePageContent {
+        margin-left: 0;
+        margin: 0 25px;
+        width: 93%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 14px;
+    }
+
+    .homePageContent {
+        margin-left: 0;
+        margin: 0 20px;
+        width: 90%;
+    }
+}

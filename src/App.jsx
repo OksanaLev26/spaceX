@@ -7,6 +7,7 @@ import { Crew } from "./pages/crew/crew";
 import { CrewItem } from "./pages/crewItem/CrewItem";
 import { Dragons } from "./pages/dragons/Dragons";
 import "./app.css";
+import { DragonItem } from "./pages/dragonItem/DragonItem";
 
 export const App = () => {
   return (
@@ -18,7 +19,7 @@ export const App = () => {
         <Route path="/crew/:id" element={<CrewItem />} />
         <Route path="/capsules" element={<Capsules />} />
         <Route path="/dragons" element={<Dragons />} />
-        {/* <Route path="/dragons/:id" element={<DragonItem />}></Route> */}
+        <Route path="/dragons/:id" element={<DragonItem />}></Route>
       </Routes>
     </div>
   );

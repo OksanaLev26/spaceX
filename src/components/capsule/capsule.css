@@ -42,3 +42,9 @@
     font-size: 22px;
     letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 643px) {
+    .capsule {
+        background-image: none;
+    }
+}

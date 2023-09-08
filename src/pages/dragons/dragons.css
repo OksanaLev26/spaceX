@@ -68,3 +68,63 @@
     color: turquoise;
     border-color: turquoise;
 }
+
+@media only screen and (max-width: 992px) {
+    .titleDragons {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .allDragons {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .dragonName {
+        font-size: 26px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .readMoreButton {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .titleDragons {
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+
+    .allDragons {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .dragonName {
+        font-size: 26px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .readMoreButton {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 482px) {
+    .readMoreButton {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .allDragons {
+        margin: 0;
+    }
+}
