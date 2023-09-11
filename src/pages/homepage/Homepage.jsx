@@ -1,19 +1,6 @@
-import { useEffect, useState } from "react";
-
 import "./homepage.css";
 
-export const Homepage = () => {
-  const [company, setCompany] = useState(null);
-
-  useEffect(() => {
-    const getCompany = async () => {
-      const res = await fetch("https://api.spacexdata.com/v4/company");
-      const data = await res.json();
-      setCompany(data);
-    };
-
-    getCompany();
-  }, []);
+export const Homepage = ({ company }) => {
 
   return (
     <>

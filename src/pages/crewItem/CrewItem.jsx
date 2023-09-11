@@ -10,7 +10,6 @@ export const CrewItem = () => {
     const getCrewItem = async () => {
       const res = await fetch(`https://api.spacexdata.com/v4/crew/${id}`);
       const data = await res.json();
-      console.log("data", data);
       setCrewItem(data);
     };
 

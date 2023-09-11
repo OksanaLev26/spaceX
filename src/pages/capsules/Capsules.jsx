@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Capsule } from "../../components/capsule/Capsule";
 import "./capsules.css";
 
-export const Capsules = () => {
-  const [capsules, setCapsules] = useState(null);
+export const Capsules = ({propCapsules}) => {
+  const [capsules, setCapsules] = useState(propCapsules);
 
   useEffect(() => {
     if (!capsules) {

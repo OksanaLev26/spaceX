@@ -1,6 +1,7 @@
 .dragonItemWrapper {
     background-image: linear-gradient(to top, #17234b, #141d3d, #11182f, #0e1122, #060815);
     height: calc(100vh - 88.5px);
+    margin-top: 88.5px;
 }
 
 .dragonItemTitle {
@@ -222,7 +223,11 @@
         font-size: 14px;
     }
 
-    .dragonItemWrapper {
-        height: calc(100vh - 88.5px);
+    .dragonItemFooterButton {
+        padding: 10px;
+    }
+
+    .specifications {
+        padding-bottom: 12px;
     }
 }

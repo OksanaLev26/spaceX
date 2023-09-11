@@ -2,15 +2,14 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./crew.css";
 
-export const Crew = () => {
-  const [crew, setCrew] = useState(null);
+export const Crew = ({propCrew}) => {
+  const [crew, setCrew] = useState(propCrew);
 
   useEffect(() => {
     if (!crew) {
       const getCrew = async () => {
         const res = await fetch("https://api.spacexdata.com/v4/crew");
         const data = await res.json();
-        console.log("data", data);
         setCrew(data);
       };
 

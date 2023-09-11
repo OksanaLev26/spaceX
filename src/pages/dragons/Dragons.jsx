@@ -2,9 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./dragons.css";
 
-export const Dragons = () => {
-  const [dragons, setDragons] = useState(null);
-  console.log("dragons", dragons);
+export const Dragons = ({propDragons}) => {
+  const [dragons, setDragons] = useState(propDragons);
 
   useEffect(() => {
     if (!dragons) {

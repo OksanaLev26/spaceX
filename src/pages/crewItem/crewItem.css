@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 88.5px;
 }
 
 .crewItem {
@@ -11,6 +12,7 @@
     justify-content: center;
     font-style: italic;
     font-variant: petite-caps;
+    margin: 0 36px;
 }
 
 .crewItemImageWrapper {
@@ -32,7 +34,7 @@
 
 .crewItemName {
     font-size: 70px;
-    margin: 60px 0 20px 0;
+    margin: 50px 0 20px 0;
 }
 
 .crewItemStatus {
@@ -55,6 +57,8 @@
     padding: 20px;
     border-radius: 8px;
     cursor: pointer;
+    width: 300px;
+    align-self: center;
 }
 
 .wiki:hover, .backButton:hover {
@@ -76,4 +80,60 @@
     margin-top: 60px;
     font-style: italic;
     font-variant: petite-caps;
+}
+
+@media only screen and (max-width: 992px) {
+    .crewItemName {
+        font-size: 30px;
+    }
+
+    .crewItemStatus, .agency, .launch {
+        font-size: 25px;
+    }
+
+    .wiki, .backButton {
+        padding: 12px;
+        font-size: 16px;
+        width: 150px;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .crewItem {
+        margin: 0 24px;
+    }
+
+    .crewItemName {
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+
+    .crewItemStatus, .agency, .launch {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 482px) {
+    .crewItemName {
+        margin-top: 30px;
+        font-size: 23px;
+    }
+
+    .crewItemStatus, .agency, .launch {
+        font-size: 18px;
+    }
+
+    .crewItemImageWrapper {
+       width: 60%;
+       padding-top: 0;
+    }
+
+    .crewItemName {
+        margin-top: 0;
+    }
+
+    .imageWrapper {
+        margin: 5px;
+    }
 }

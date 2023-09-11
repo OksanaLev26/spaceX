@@ -6,13 +6,11 @@ export const DragonItem = () => {
   const [dragonItem, setDragonItem] = useState(null);
 
   const { id } = useParams();
-  console.log("id", id);
 
   useEffect(() => {
     const getDragonItem = async () => {
       const res = await fetch(`https://api.spacexdata.com/v4/dragons/${id}`);
       const data = await res.json();
-      console.log("data", data);
       setDragonItem(data);
     };
 
