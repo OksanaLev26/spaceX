@@ -10,6 +10,7 @@ Features
 - Implements a sticky header for easy navigation.
 - Includes a burger menu for smaller devices using CSS and JavaScript.
 - Features responsive design for various screen sizes.
+- Utilizes 'localStorage' to store and retrieve 'dragonItem' data for a seamless user experience.
 
 Technologies Used
 
@@ -72,3 +73,4 @@ Acknowledgments
 - SpaceX API https://github.com/r-spacex/SpaceX-API/tree/master/docs for providing the data used in this project.
 - React for the fantastic JavaScript library.
 - React Router for routing in the app.
+- LocalStorage for data storage within the app.
