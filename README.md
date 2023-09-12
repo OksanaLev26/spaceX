@@ -74,4 +74,3 @@ Acknowledgments
 - React for the fantastic JavaScript library.
 - React Router for routing in the app.
 - LocalStorage for data storage within the app.
-
