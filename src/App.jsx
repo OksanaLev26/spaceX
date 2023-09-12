@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import { Homepage } from "./pages/homepage/Homepage";
 import { Header } from "./components/navigation/Header";
@@ -11,8 +11,8 @@ import { useEffect, useState } from "react";
 import { BurgerMenu } from "./components/burgerMenu/BurgerMenu";
 import "./app.css";
 
-const DOMEN = 'spaceX';
-const API = 'https://api.spacexdata.com/v4';
+const DOMEN = "spaceX";
+const API = "https://api.spacexdata.com/v4";
 
 export const App = () => {
   const [crew, setCrew] = useState(null);
@@ -23,7 +23,7 @@ export const App = () => {
 
   const handleSetHamburgerOpen = (isOpen) => {
     setHamburgerOpen(isOpen);
-  }
+  };
 
   useEffect(() => {
     const getCapsules = async () => {
@@ -97,20 +97,23 @@ export const App = () => {
 
   return (
     <div className="app">
-      <Header hamburgerIsOpen={hamburgerIsOpen} setHamburgerOpen={handleSetHamburgerOpen}/>
-      <Routes basename='/spaceX/'>
-        <Route path='/' element={<Homepage company={company} />} />
-        <Route path='/crew' element={<Crew propCrew={crew} />} />
-        <Route path='/crew/:id' element={<CrewItem />} />
-        <Route
-          path='/capsules'
-          element={<Capsules propCapsules={capsules} />}
-        />
-        <Route path='/dragons' element={<Dragons propDragons={dragons} />} />
-        <Route path='/dragons/:id' element={<DragonItem />}></Route>
+      <Header
+        hamburgerIsOpen={hamburgerIsOpen}
+        setHamburgerOpen={handleSetHamburgerOpen}
+      />
+      <Routes>
+        <Route path="/" element={<Homepage company={company} />} />
+        <Route path="/crew" element={<Crew propCrew={crew} />} />
+        <Route path="/crew/:id" element={<CrewItem />} />
+        <Route path="/capsules" element={<Capsules propCapsules={capsules} />} />
+        <Route path="/dragons" element={<Dragons propDragons={dragons} />} />
+        <Route path="/dragons/:id" element={<DragonItem />} />
       </Routes>
       {hamburgerIsOpen && (
-        <BurgerMenu hamburgerIsOpen={hamburgerIsOpen} setHamburgerOpen={handleSetHamburgerOpen}/>
+        <BurgerMenu
+          hamburgerIsOpen={hamburgerIsOpen}
+          setHamburgerOpen={handleSetHamburgerOpen}
+        />
       )}
     </div>
   );
