@@ -98,7 +98,7 @@ export const App = () => {
   return (
     <div className="app">
       <Header hamburgerIsOpen={hamburgerIsOpen} setHamburgerOpen={handleSetHamburgerOpen}/>
-      <Routes basename='/spaceX'>
+      <Routes basename='/spaceX/'>
         <Route path='/' element={<Homepage company={company} />} />
         <Route path='/crew' element={<Crew propCrew={crew} />} />
         <Route path='/crew/:id' element={<CrewItem />} />
