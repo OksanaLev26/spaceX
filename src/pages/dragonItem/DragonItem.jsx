@@ -8,13 +8,21 @@ export const DragonItem = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const getDragonItem = async () => {
-      const res = await fetch(`https://api.spacexdata.com/v4/dragons/${id}`);
-      const data = await res.json();
-      setDragonItem(data);
-    };
-
-    getDragonItem();
+    if (id) {
+      const dragon = localStorage.getItem(id);
+      if (!dragon) {
+        const getDragonItem = async () => {
+          const res = await fetch(`https://api.spacexdata.com/v4/dragons/${id}`);
+          const data = await res.json();
+          setDragonItem(data);
+          localStorage.setItem(id, JSON.stringify(data));
+        };
+    
+        getDragonItem();
+      } else {
+        setDragonItem(JSON.parse(dragon));
+      }
+    }
   }, [id]);
 
   const status = dragonItem?.active ? "Active" : "Retired";
