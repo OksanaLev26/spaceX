@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
 import { Homepage } from "./pages/homepage/Homepage";
 import { Header } from "./components/navigation/Header";
@@ -11,7 +11,6 @@ import { useEffect, useState } from "react";
 import { BurgerMenu } from "./components/burgerMenu/BurgerMenu";
 import "./app.css";
 
-const DOMEN = "spaceX";
 const API = "https://api.spacexdata.com/v4";
 
 export const App = () => {
