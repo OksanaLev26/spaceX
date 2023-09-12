@@ -29,7 +29,7 @@ git clone https://github.com/OksanaLev26/spaceX.git
 
 2. Navigate to the project directory:
 
-cd spaceXProject
+cd spaceX
 
 3. Install dependencies:
 
