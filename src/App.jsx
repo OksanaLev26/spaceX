@@ -102,11 +102,11 @@ export const App = () => {
         setHamburgerOpen={handleSetHamburgerOpen}
       />
       <Routes>
-        <Route path="/" element={<Homepage company={company} />} />
-        <Route path="/crew" element={<Crew propCrew={crew} />} />
+        <Route path="/" element={<Homepage company={company} exact />} />
+        <Route path="/crew" element={<Crew propCrew={crew} />} exact/>
         <Route path="/crew/:id" element={<CrewItem />} />
-        <Route path="/capsules" element={<Capsules propCapsules={capsules} />} />
-        <Route path="/dragons" element={<Dragons propDragons={dragons} />} />
+        <Route path="/capsules" element={<Capsules propCapsules={capsules} exact/>} />
+        <Route path="/dragons" element={<Dragons propDragons={dragons} />} exact/>
         <Route path="/dragons/:id" element={<DragonItem />} />
       </Routes>
       {hamburgerIsOpen && (
