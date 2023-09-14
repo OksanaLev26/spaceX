@@ -101,7 +101,7 @@ export const App = () => {
         setHamburgerOpen={handleSetHamburgerOpen}
       />
       <Routes>
-        <Route path="/" element={<Homepage company={company} exact />} />
+        <Route path="/spaceX" element={<Homepage company={company} exact />} />
         <Route path="/crew" element={<Crew propCrew={crew} />} exact/>
         <Route path="/crew/:id" element={<CrewItem />} />
         <Route path="/capsules" element={<Capsules propCapsules={capsules} exact/>} />
